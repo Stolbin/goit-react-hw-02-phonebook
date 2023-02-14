@@ -18,6 +18,8 @@ export const BoxPhonebook = styled.div`
   border-radius: 5px;
   background: #dcdcdc;
   margin-bottom: 30px;
+
+  box-shadow: 1px 2px 3px #000000;
 `;
 
 export const BoxContacts = styled.div`
@@ -25,4 +27,6 @@ export const BoxContacts = styled.div`
   border: 1px solid black;
   border-radius: 5px;
   background: #dcdcdc;
+
+  box-shadow: 1px 2px 3px #000000;
 `;
