@@ -9,7 +9,7 @@ export const Container = styled.div`
   background: #fffaf0;
   border: 2px solid #556b2f;
   border-radius: 10px;
-  box-shadow: 10px 20px 30px 0px rgba(86, 86, 86, 0.5);
+  box-shadow: 15px 10px 50px 0px rgba(86, 86, 86, 0.5);
 `;
 
 export const BoxPhonebook = styled.div`
