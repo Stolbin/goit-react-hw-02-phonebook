@@ -3,7 +3,8 @@ import ContactsList from 'components/ContactsList';
 import Phonebook from 'components/Phonebook';
 import Filter from 'components/Filter';
 import { nanoid } from 'nanoid';
-import { Container, Section } from './App.styled';
+import { Container, BoxPhonebook, BoxContacts } from './App.styled';
+import SectionTitle from 'components/SectionTitle';
 
 class App extends Component {
   state = {
@@ -70,16 +71,20 @@ class App extends Component {
     const filterContacts = this.getFilterContacts();
     return (
       <Container>
-        <Section title="Phonebook">
-          <Phonebook onSubmit={this.addContact} />
-        </Section>
-        <Section title="Contacts">
-          <Filter value={this.filter} onChange={this.changeFilter} />
-          <ContactsList
-            contacts={filterContacts}
-            onDeleteContact={this.deleteContact}
-          />
-        </Section>
+        <BoxPhonebook>
+          <SectionTitle title="Phonebook">
+            <Phonebook onSubmit={this.addContact} />
+          </SectionTitle>
+        </BoxPhonebook>
+        <BoxContacts>
+          <SectionTitle title="Contacts">
+            <Filter value={this.filter} onChange={this.changeFilter} />
+            <ContactsList
+              contacts={filterContacts}
+              onDeleteContact={this.deleteContact}
+            />
+          </SectionTitle>
+        </BoxContacts>
       </Container>
     );
   }

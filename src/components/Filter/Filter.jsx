@@ -1,12 +1,12 @@
 import React from 'react';
 import PropTypes from 'prop-types';
-import { Label, Input } from 'components/Phonebook/Phonebook.styled';
+import { LabelFilter, InputFilter } from 'components/Filter/Filter.styled';
 
 const Filter = ({ value, onChange }) => (
-  <Label>
-    Find contact by name
-    <Input type="text" value={value} onChange={onChange} />
-  </Label>
+  <LabelFilter>
+    Find contact by name:
+    <InputFilter type="text" value={value} onChange={onChange} />
+  </LabelFilter>
 );
 
 Filter.propTypes = {

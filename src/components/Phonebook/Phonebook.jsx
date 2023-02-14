@@ -1,5 +1,11 @@
 import React, { Component } from 'react';
-import { Form, Label, Input, Button } from './Phonebook.styled';
+import {
+  Form,
+  Label,
+  InputName,
+  Input,
+  Button,
+} from 'components/Phonebook/Phonebook.styled';
 
 class Phonebook extends Component {
   state = {
@@ -24,7 +30,7 @@ class Phonebook extends Component {
       <Form onSubmit={this.handleSubmit}>
         <Label>
           Name:
-          <Input
+          <InputName
             type="text"
             name="name"
             value={name}
